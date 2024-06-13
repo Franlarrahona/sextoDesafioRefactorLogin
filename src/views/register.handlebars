@@ -1,0 +1,22 @@
+<div id="register">
+    <h2 id="h2Register">Registrate aqui</h2>
+
+    <form action='/api/sessions/register' method="post">
+        <div id="formRegister">
+            <input class="inputRegister" type="text" name="firstName" placeholder="Nombre" required="required" autocomplete="nombre">
+            <input class="inputRegister" type="text" name='lastName' placeholder="Apellido" required="required" autocomplete="apellido">
+            <input class="inputRegister" type="email" name="email" placeholder="Email" required="required" autocomplete="email" >
+            <input class="inputRegister" type="password" name="password" placeholder="Contraseña" required="required"  autocomplete="password">
+            <select  class="inputRegister" name="gender">
+                <option value="female"> femenino</option>
+                <option value="male"> masculino</option>
+            </select>
+            <button type="submit">Registrarse</button>
+            <div >
+                Ya tenés cuenta?: <a class="a2" href="/login">Ingresá</a>
+        </div>
+    </div>
+
+    </form>
+
+</div>
